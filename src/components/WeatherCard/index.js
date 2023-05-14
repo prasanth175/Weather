@@ -65,7 +65,7 @@ const WeatherCard = ( weatherData) => {
     <div className='current-weather'>
     <div className='weather-top-container'>
     <div className='weather-report'>
-      <Link className='nav-link' to={`/weather/weather-details?location=${weatherData.data.name}`}><h1 className='current-city'>
+      <Link className='nav-link' to={`/weather-details?location=${weatherData.data.name}`}><h1 className='current-city'>
         {weatherData.data.name}, {weatherData.data.sys.country}
       </h1></Link>
       <div className='temperature'>

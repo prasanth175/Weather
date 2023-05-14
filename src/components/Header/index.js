@@ -10,8 +10,8 @@ const Header = () => (
 
             <nav className='navbar'>
                 <ul className='nav-list'>
-                    <Link className='nav-link' to='/weather/'><li className='nav-item'>Home</li></Link>
-                    <Link className='nav-link' to='/weather/search-location'><li className='nav-item'>Search Location</li></Link>
+                    <Link className='nav-link' to='/'><li className='nav-item'>Home</li></Link>
+                    <Link className='nav-link' to='/search-location'><li className='nav-item'>Search Location</li></Link>
                 </ul>
             </nav>
     )

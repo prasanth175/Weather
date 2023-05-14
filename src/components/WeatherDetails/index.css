@@ -1,0 +1,107 @@
+.details-container{
+    background-image: linear-gradient(to bottom, #2193b0 , #6dd5ed);
+    padding-top: 30px;
+    padding-bottom: 45px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.load-container{
+    background-image: linear-gradient(to bottom, #2193b0 , #6dd5ed);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-mid-container{
+    width: 80vw;
+}
+
+.forecast-container{
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(228, 237, 239); */
+    padding: 30px;
+    border-radius: 5px;
+    margin: 30px;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    box-shadow: 4px 8px 16px 0px #6dd5ed;
+}
+
+.forecast-container::-webkit-scrollbar {
+display: none; /* Chrome, Safari, and Opera */
+}
+
+.forecast-heading{
+    margin-left: 30px;
+    margin-top: 50px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.forecast-item{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+    color: rgb(58, 58, 58);
+    /* border: 1px solid rgb(226, 226, 226); */
+    /* background-color: #aeecfa; */
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.forecast-desc{
+    text-align: center;
+}
+
+.add-btn{
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-self: flex-end;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.add-btn:hover{
+    background-color: white;
+    color: #2193b0 ;
+}
+
+.forecast-temp{
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+
+@media (max-width: 600px){
+    .add-btn{
+        align-self: flex-start;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .details-container{
+        height: 100%;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .forecast-heading{
+        font-size: 25px;
+    }
+}

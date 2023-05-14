@@ -38,7 +38,7 @@ const SearchLocation = (props) => {
   const handleSearch = async () => {
     if (selectedLocation) {
       const {history} = props
-      history.replace(`/weather-details?location=${selectedLocation.name}`);
+      history.replace(`/weather/weather-details?location=${selectedLocation.name}`);
 
     }
   };
